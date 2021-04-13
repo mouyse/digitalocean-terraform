@@ -3,7 +3,7 @@ variable "pub_key" {}
 variable "pvt_key" {}
 variable "ssh_fingerprint" {}
 provider "digitalocean" {
-  token = "${var.jay_digitalocean_terraform_token}"
+  token = var.jay_digitalocean_terraform_token
 }
 
 terraform {

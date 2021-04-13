@@ -5,13 +5,13 @@ resource "digitalocean_droplet" "jay-digitalocean-terraform-web-server-1" {
   size = "s-1vcpu-1gb"
   private_networking = true
   ssh_keys = [
-    "${var.ssh_fingerprint}"
+    var.ssh_fingerprint
   ]
   connection {
     type = "ssh"
     host = self.ipv4_address
     user = "root"
-    private_key = "${file(var.pvt_key)}"
+    private_key = file(var.pvt_key)
     timeout = "2m"
   }
   provisioner "remote-exec" {
