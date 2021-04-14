@@ -1,6 +1,6 @@
-resource "digitalocean_droplet" "JayDOWebServer1" {
+resource "digitalocean_droplet" "JayDOWebServer2" {
   image              = "ubuntu-20-04-x64"
-  name               = "JayDOWebServer1"
+  name               = "JayDOWebServer2"
   region             = "blr1"
   size               = "s-1vcpu-1gb"
   private_networking = true
