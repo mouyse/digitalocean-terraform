@@ -10,7 +10,7 @@ If you would like to enable log reporting, you can declare a variable in the con
 
 If you want to turn it off,`TF_LOG=0`
 
-#### 2. tfstat
+#### 2. tfstate
 
 This is the file that would contain the last fetched information about the instances deployed in the last apply `batch`.
 
@@ -18,3 +18,5 @@ This is the file that would contain the last fetched information about the insta
 #### 3. terraform refresh
 
 In case you would want to refresh the current terraform plan, you can use `terraform refresh <<YOUR ARGUMENTS>>`
+
+Refresh could be needed under scenario where the tflstate file would've gotten corrupted or lost, or due to any other reason as well.
