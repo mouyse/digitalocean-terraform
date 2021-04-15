@@ -1,5 +1,8 @@
-# digitalocean-terraform
-Testing out terraform on digital ocean after taking inspiration from Dave's tutoriaLinux Youtube videos.
+# What is Terraform?
+
+Terraform is an open-source infrastructure as code software tool that enables you to safely and predictably create, change, and improve infrastructure.
+
+[Visit Terraform's website to know more](https://www.terraform.io/)
 
 ## **Tips and Tricks** ##
 
