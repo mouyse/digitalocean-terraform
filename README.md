@@ -27,6 +27,7 @@ If you want to destroy the project, you can refer to the below steps:
 
   1. Run command `terraform plan -destroy -OUT=<<YOUR_FILENAME>>.tfplan <<YOUR ARGUMENTS>>`
         1. Log Verbose should tell you briefly on what the tasks plan will perform, i.e. destorying any droplets created, etc.
-  2. Once you run the destroy command, it will generate the Terraform destroy plan in the file given as value to the argument `-OUT`, which would contain the binary codes.
-  3. The final step is to apply the plan which is generated in the above steps:
+  2. Once you run the destroy command, it will generate the Terraform destroy plan in the file given as a value to the argument `-OUT`.
+        1. FYI, the plan file will contain binary codes.
+  4. The final step is to apply the plan which is generated in the above steps:
         1. `terraform apply <<YOUR_FILENAME>>.tfplan`
